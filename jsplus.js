@@ -1,3 +1,6 @@
+Number.prototype.fixed = function(num){
+  return this.toFixed(num);
+};
 String.prototype.chr = function(num){
   if(num === undefined) num = 0;
   return this[num < 0 ? this.length + num : num];
