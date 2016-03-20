@@ -5,6 +5,6 @@ String.prototype.chr = function(num){
 String.prototype.reverse = function(){
   return this.split("").reverse().join("");
 };
-String.prototype.trimss(){
+String.prototype.trimss = function(){
   return this.replace(/\s+\s+/g, " ");
 };
