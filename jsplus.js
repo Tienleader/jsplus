@@ -17,7 +17,7 @@ String.prototype.trimss = function(){
 };
 Date.prototype.daysInMonth = function(){
   var t = new Date(this), d = 28;
-  while( new Date( t.setDate( d ) ).getDate() > 1 ){
+  while(new Date(t.setDate(d)).getDate() > 1){
     d++;
   }
   return d - 1;
