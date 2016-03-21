@@ -15,6 +15,9 @@ String.prototype.reverse = function(){
 String.prototype.trimMultiSpaces = function(){
   return this.replace(/\s+\s+/g, " ");
 };
+Array.prototype.clone = function(){
+  return this.concat();
+};
 Date.prototype.daysInMonth = function(){
   var t = new Date(this), d = 28;
   while(new Date(t.setDate(d)).getDate() > 1){
