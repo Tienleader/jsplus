@@ -12,7 +12,7 @@ String.prototype.chr = function(num){
 String.prototype.reverse = function(){
   return this.split("").reverse().join("");
 };
-String.prototype.trimss = function(){
+String.prototype.trimMultiSpaces = function(){
   return this.replace(/\s+\s+/g, " ");
 };
 Date.prototype.daysInMonth = function(){
