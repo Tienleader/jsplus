@@ -44,6 +44,10 @@ String.prototype.chr = function(num){
 String.prototype.reverse = function(){
   return this.split("").reverse().join("");
 };
+String.prototype.splice = function(start, len, str){
+  if(str === undefined) str = "";
+  return this.slice(0, start) + str + this.slice(start + len);
+};
 Array.prototype.clone = function(){
   return this.concat();
 };
